@@ -7,6 +7,6 @@
 int main(void)
 
 {
-	printf("who are you?");
+	printf("cisfun");
 	return (0);
 }	
