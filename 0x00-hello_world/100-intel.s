@@ -59,7 +59,7 @@ main:
 # /usr/include/x86_64-linux-gnu/bits/stdio2.h:107:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
 	lea	rdi, .LC0[rip]	#,
 	call	puts@PLT	#
-# 100-intel.c:12: }	
+# 100-intel.c:12: }
 	mov	eax, 0	#,
 	add	rsp, 8	#,
 	.cfi_def_cfa_offset 8
