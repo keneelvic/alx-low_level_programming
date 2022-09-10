@@ -1,11 +1,12 @@
 #include <stdio.h>
+
 /**
- * main - Entry Point
- * 
- * return - always 0 signifies success
+ *main - Entry point
+ *
+ *Return: Always 0(success)
  */
 int main(void)
 {
-	printf("hello world");
+	printf("Still on Hello world\n");
 	return (0);
 }

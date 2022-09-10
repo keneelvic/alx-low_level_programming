@@ -1,10 +1,10 @@
-	.file	"100-intel.c"
+	.file	"main.c"
 	.intel_syntax noprefix
 # GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
 #	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
 # GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-# options passed:  -imultiarch x86_64-linux-gnu 100-intel.c -masm=intel
+# options passed:  -imultiarch x86_64-linux-gnu main.c -masm=intel
 # -mtune=generic -march=x86-64 -auxbase-strip 100-intel.s -Og -fverbose-asm
 # -fasynchronous-unwind-tables -fstack-protector-strong -Wformat
 # -Wformat-security -fstack-clash-protection -fcf-protection
@@ -59,7 +59,7 @@ main:
 # /usr/include/x86_64-linux-gnu/bits/stdio2.h:107:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
 	lea	rdi, .LC0[rip]	#,
 	call	puts@PLT	#
-# 100-intel.c:12: }
+# main.c:12: }
 	mov	eax, 0	#,
 	add	rsp, 8	#,
 	.cfi_def_cfa_offset 8
