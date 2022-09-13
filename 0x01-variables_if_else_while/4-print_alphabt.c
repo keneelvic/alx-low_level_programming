@@ -11,7 +11,10 @@ int main(void)
 
 	for (lowCase = 'a'; lowCase <= 'z'; lowCase++)
 {
+	if (lowCase != 'e' && lowCase != 'q')
+{
 	putchar(lowCase);
+}
 }
 	putchar('\n');
 
