@@ -7,39 +7,34 @@
  */
 void times_table(void)
 {
-	int fml, sml, gml, fd, sd;
+	int a, b, c, d, e;
 
-	for (fml = 0, fml < 10; fml++)
-{
-	for (sml = 0; sml < 10; sml++)
-{
-	gml = fml * sml;
-	fd = gml / 10;
-	sd = gml % 10;
-
-	if (sml == 0)
-{
-	_putchar('0');
-} else if (gml < 10)
-{
-	_putchar(' ');
-	_putchar('0' + sd);
-} else
-{
-	_putchar('0' + fd);
-	_putchar('0' + sd);
-}
-	if (sml < 9)
-{
-	_putchar(',');
-	_putchar(' ');
-} else 
-{
-	_putchar('\n');
-}
-
-}
-
-}
-
+	for (a = 0; a < 10; a++)
+	{
+		for (b = 0; b < 10; b++)
+		{
+			c = a * b;
+			d = c / 10;
+			e = c % 10;
+			if (b == 0)
+				_putchar('0');
+			else if (c < 10)
+			{
+				_putchar(' ');
+				_putchar('0' + e);
+			}
+			else
+			{
+				_putchar('0' + d);
+				_putchar('0' + e);
+			}
+			if (b < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+				_putchar('\n');
+		}
+	}
 }
