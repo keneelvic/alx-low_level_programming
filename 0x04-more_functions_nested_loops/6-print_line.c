@@ -1,15 +1,13 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_line - prints a straight line based on the number u input
- *@n: determines the length of the underscore represented with numbers
- *
- * _putchar: used 3 times
+ * print_line - a function that draws a straight line in the terminal
+ * @n: input number of times to print '_'
+ * Return: a straight line
  */
-
 void print_line(int n)
 {
-	int l;
+	int c;
 
 	if (n <= 0)
 	{
@@ -17,11 +15,10 @@ void print_line(int n)
 	}
 	else
 	{
-		for (l = 1; l < n; l++)
+		for (c = 1; c <= n; c++)
 		{
 			_putchar('_');
 		}
 		_putchar('\n');
 	}
-
 }
