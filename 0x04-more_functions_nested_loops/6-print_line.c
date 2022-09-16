@@ -6,6 +6,7 @@
  *
  * _putchar: used 3 times
  */
+
 void print_line(int n)
 {
 	int l;
