@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _strlen - function that prints the length of a string
+ *
+ * @s: a pointer that points to char str
+ *
+ * Return: variable countl is being returned
+ */
 int _strlen(char *s)
 {
 	int count_l = 0;
@@ -9,5 +16,5 @@ int _strlen(char *s)
 		count_l++;
 		s++;
 	}
-	return count_l;
+	return (count_l);
 }
