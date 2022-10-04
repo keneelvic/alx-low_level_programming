@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>>
+#include <stdlib.h>
 /**
  *free_grid - Entry point
  *@grid: rows of matrix
@@ -14,8 +14,8 @@ void free_grid(int **grid, int height)
 	ai = 0;
 	while (ai < height)
 	{
-		p = grid[ai];
-		free(p);
+		ptr = grid[ai];
+		free(ptr);
 		ai++;
 	}
 	free(grid);
