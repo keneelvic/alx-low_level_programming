@@ -11,25 +11,25 @@
  */
 char *_strdup(char *str)
 {
-	char *dupl;
-	int i, length;
+	char *newstrn = NULL;
+	unsigned int i;
+	int en;
 
-	dupl = (char *) malloc(sizeof(str));
-
-	i = length = 0;
-	while (str[i] != '\0')
-	{
-		length++;
-			i++;
-	}
-	if (dupl == NULL)
+	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-	{
-		dupl[i] = str[i];
-		i++;
-	}
-	return (dupl);
 
+	for (en = 0; str[en] != '\0'; en++)
+
+	newstrn = (char *) malloc(en + 1 * sizeof(char));
+	if (newstrn != NULL)
+	{
+		for (i = 0; str[i] != '\0'; i++)
+			newstrn[i] = str[i];
+	}
+	else
+	{
+		return (NULL);
+	}
+	newstrn[i] = '\0';
+	return (newstrn);
 }
