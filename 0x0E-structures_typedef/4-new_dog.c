@@ -10,17 +10,15 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *n = name;
-	char *o = owner;
 	dog_t *d;
 
 	/*allocating memory to struct*/
 	d = malloc(sizeof(dog_t));
 	if (d != NULL)
 	{
-		d->name = n;
+		d->name = name;
 		d->age = age;
-		d->owner = o;
+		d->owner = owner;
 	}
 	else
 	{
