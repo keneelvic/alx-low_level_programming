@@ -2,7 +2,7 @@
 is a data type that allows us to combime data items of different types
 
 #fomular
- struct name 
+ struct name
 {
 	item1 data-type;
 	item2 data-type
@@ -10,5 +10,5 @@ is a data type that allows us to combime data items of different types
 }
 void main(void)
 {
-	struct name name_ren;
+	struct name name_ren
 }
