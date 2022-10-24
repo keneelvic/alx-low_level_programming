@@ -2,7 +2,7 @@
 
 /**
  * listint_len - returns the no of elements in list
- * @h: points to start of list
+ * @h: points to beginning  of list
  * Return: no of elements in size_t form
  */
 size_t listint_len(const listint_t *h)
